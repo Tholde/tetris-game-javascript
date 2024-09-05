@@ -1,0 +1,3 @@
+gBArray : limite de plateau de jeu.
+cordinate Array : tableau de coordonnee
+curtetromino : manamboatra ilay forme isakin'ny careau sy coordonnee

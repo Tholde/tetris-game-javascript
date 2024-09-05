@@ -1,0 +1,182 @@
+body {
+    overflow  : hidden;
+    background: #02011d;
+}
+
+#tetris {
+    position     : relative;
+    width        : 410px;
+    height       : 470px;
+    border       : 5px solid rgb(255, 0, 208);
+    padding      : 20px;
+    border-radius: 12px;
+    margin-top   : 70px;
+    left         : 80px;
+}
+
+#exit {
+    position: relative;
+    width   : 30px;
+    height  : 28px;
+    left    : 390px;
+    top     : -15px;
+}
+
+#info {
+    background-color: transparent;
+    border          : 5px solid rgb(255, 0, 208);
+    border-radius   : 12px;
+    color           : #fff;
+    float           : right;
+    width           : 150px;
+    height          : 422px;
+    padding         : 10px;
+    position        : relative;
+    top             : 20px;
+}
+
+#next_shape {
+    position     : relative;
+    border       : 2px solid rgb(255, 0, 208);
+    border-radius: 12px;
+    width        : 120px;
+    height       : 90px;
+    left         : 15px;
+    margin-top   : -30px;
+}
+
+p {
+    font-size: 19px;
+    position : relative;
+    left     : 10px;
+    top      : -5px;
+}
+
+@keyframes blink {
+    to {
+        outline: #ff00ee solid 1px;
+    }
+}
+
+#start {
+    animation    : blink 0.7s steps(2, start) infinite;
+    background   : linear-gradient(35deg, #010e59, rgb(255, 0, 208), #010e59);
+    border-radius: 5px;
+    color        : #ffffff;
+    cursor       : pointer;
+    font-size    : 25px;
+    position     : relative;
+    left         : 32px;
+    width        : 90px;
+    height       : 40px;
+    top          : 0px;
+}
+
+#restart {
+    animation    : blink 0.7s steps(2, start) infinite;
+    background   : linear-gradient(35deg, #010e59, rgb(255, 0, 208), #010e59);
+    border-radius: 5px;
+    color        : #ffffff;
+    cursor       : pointer;
+    font-size    : 25px;
+    position     : relative;
+    left         : 32px;
+    width        : 90px;
+    height       : 40px;
+    top          : 0px;
+    display      : none;
+}
+
+#message {
+    color  : rgb(255, 0, 208);
+    display: none;
+}
+
+#logo_info {
+    position: relative;
+    width   : 90px;
+    height  : 60px;
+    left    : 30px;
+    top     : -15px;
+}
+
+#canvas {
+    width           : 200px;
+    height          : 440px;
+    background-color: transparent;
+    border          : 5px solid rgb(255, 0, 208);
+    position        : relative;
+    top             : -11px;
+    color           : #fff;
+}
+
+#canvas h1 {
+    margin    : 0;
+    padding   : 0;
+    text-align: center;
+    font-size : 25px;
+    position  : relative;
+    top       : 70px;
+}
+
+#canvas img {
+    position: relative;
+    width   : 170px;
+    height  : 150px;
+    left    : 15px;
+    top     : 60px;
+}
+
+#canvas button {
+    animation    : blink 0.7s steps(2, start) infinite;
+    background   : linear-gradient(35deg, #010e59, rgb(255, 0, 208), #010e59);
+    border-radius: 5px;
+    color        : #ffffff;
+    cursor       : pointer;
+    font-size    : 20px;
+    position     : relative;
+    left         : 60px;
+    width        : 80px;
+    height       : 30px;
+    top          : 70px;
+}
+
+.piece {
+    border  : 1px solid white;
+    position: absolute;
+}
+
+.square {
+    position: absolute;
+    width   : 19px;
+    height  : 19px;
+    border  : 1px solid white;
+}
+
+.type0 {
+    background-color: #aa00ff;
+}
+
+.type1 {
+    background-color: #0099ff;
+}
+
+.type2 {
+    background-color: #ff4400;
+}
+
+.type3 {
+    background-color: #0101ff;
+}
+
+.type4 {
+    background-color: #00ff08;
+}
+
+.type5 {
+    background-color: #ff0000;
+}
+
+.type6 {
+    background-color: #ffff00;
+}

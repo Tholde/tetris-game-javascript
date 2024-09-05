@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Examen Mi-semestre JavaScript 2023-2024</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+  <div id="home">
+    <h1 id="welcome">WELCOME IN OUR EXAMEN PAGE</h1>
+    <P id="with">with</P>
+    <img id="logo" src="./ambanimaso.png">
+    <div>
+      <img id="history" onclick="history()" src="./history.png">
+      <p id="historyText">click this button to show the history of player</p>
+      <img id="run" onclick="run()" src="./play.png">
+      <p id="runText">click this button to run the tetris game</p>
+    </div>
+  </div>
+  <script>
+    function run() {
+      return window.location.href = "game.html";
+    }
+    function history() {
+      return window.location.href = "history.html";
+    }
+    //création de l'élement audio
+    var audio = new Audio();
+    //Fonction pour jouer la musique
+    function jouerMusique(src) {
+      audio.src = src;
+      audio.play();
+    }
+    //jouer musique
+    jouerMusique("vola.mp3");
+  </script>
+</body>
+
+</html>
